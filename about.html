@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>About | Interactive Quiz Game</title>
+<meta name="description" content="How Interactive Quiz Game works, what it includes and how to customise it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="index.html">🧠 Interactive Quiz Game</a>
+  <nav class="menu" aria-label="Main">
+    <a href="index.html">Home</a>
+    <a href="index.html#categories">Categories</a>
+    <a href="index.html#leaderboard">Leaderboard</a>
+    <a href="about.html" class="on" aria-current="page">About</a>
+  </nav>
+  <button class="icon-btn" id="snd" aria-label="Mute sound"></button>
+  <button class="icon-btn" id="thm" aria-label="Toggle dark mode"></button>
+</div></header>
+
+<main class="wrap">
+  <section class="about-hero">
+    <h1>About Interactive Quiz Game</h1>
+    <p class="muted">A free learning game where you pick a topic, race the clock and climb the leaderboard.</p>
+  </section>
+
+  <section class="block">
+    <h2>How to play</h2>
+    <div class="glass card">
+      <ol class="steps">
+        <li>Choose a difficulty: Easy gives 25 seconds per question, Medium 18 and Hard 10.</li>
+        <li>Pick one of six categories. Each has 15 questions.</li>
+        <li>Answer before the timer ends. You can pick only one answer per question.</li>
+        <li>Check the answer review on the results page, then save your score.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>What is included</h2>
+    <div class="grid">
+      <div class="glass card"><i>⏱️</i><strong>Timed questions</strong><p class="muted">A countdown and progress bar keep every round moving.</p></div>
+      <div class="glass card"><i>🏆</i><strong>Leaderboard</strong><p class="muted">Scores are stored by the Python server and filtered by category.</p></div>
+      <div class="glass card"><i>🌙</i><strong>Dark mode</strong><p class="muted">Switch themes at any time. Your choice is remembered.</p></div>
+      <div class="glass card"><i>💾</i><strong>Saved progress</strong><p class="muted">Leave a quiz and resume it later from the homepage.</p></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="glass card">
+      <h2>Make it your own</h2>
+      <p>Questions live in one list at the top of <code>quiz.js</code>. Add a line, or a whole category, and the game shuffles and scores it automatically. Colours are set at the top of <code>style.css</code>.</p>
+      <a class="btn" href="index.html#categories" style="display:inline-block;text-decoration:none">Start playing</a>
+    </div>
+  </section>
+</main>
+<footer>© 2026 Interactive Quiz Game</footer>
+<script src="common.js"></script>
+</body>
+</html>
