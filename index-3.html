@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interactive Quiz Game</title>
+  <meta name="description" content="Pick a category, answer questions and see your score on the leaderboard.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="bar">
+    <a class="logo" href="/">Interactive Quiz Game</a>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>Interactive Quiz Game</h1>
+      <p>Pick a category, answer three questions and get your score on the leaderboard.</p>
+    </section>
+
+    <section id="pick" class="block">
+      <h2>Choose a category</h2>
+      <div id="cats" class="services"></div>
+    </section>
+
+    <section id="play" class="block" hidden>
+      <p id="progress" class="muted"></p>
+      <h2 id="question"></h2>
+      <div id="options" class="options"></div>
+      <button id="next" class="btn" hidden>Next question</button>
+    </section>
+
+    <section id="result" class="block" hidden>
+      <h2 id="score"></h2>
+      <label class="name">Your name <input id="player" maxlength="30" autocomplete="nickname"></label>
+      <button id="save" class="btn">Save score</button>
+      <ol id="board" class="board"></ol>
+      <button id="again" class="btn ghost">Play again</button>
+    </section>
+    <p id="msg" class="block muted" role="status"></p>
+  </main>
+  <footer>© 2026 Interactive Quiz Game</footer>
+  <script src="script.js"></script>
+</body>
+</html>
